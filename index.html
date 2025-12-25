@@ -195,41 +195,96 @@
 </html>
 
 <style>
-	body {
-		font-family: Arial, sans-serif;
-		margin: 0;
-		padding: 0;
-		background-color: #f4f4f4;
-		color: #333;
-	}
+        /* General body styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eef2f7;
+            color: #333;
+            line-height: 1.6;
+        }
 
-	header {
-		background-color: #333;
-		color: #fff;
-		padding: 1em 0;
-		text-align: center;
-	}
+        /* Header styles */
+        header {
+            background: linear-gradient(90deg, #4b6cb7, #182848);
+            color: #fff;
+            padding: 1.5em 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
 
-	main {
-		padding: 20px;
-	}
+        nav {
+            text-align: center;
+            margin-bottom: 1em;
+        }
 
-	section {
-		margin-bottom: 20px;
-		padding: 15px;
-		background-color: #fff;
-		border-radius: 5px;
-		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-	}
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            background-color: #ff6f61;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
 
-	footer {
-		text-align: center;
-		padding: 1em 0;
-		background-color: #333;
-		color: #fff;
-		position: relative;
-		bottom: 0;
-		width: 100%;
-	}
-</style>
+        nav a:hover {
+            background-color: #ff3b2e;
+        }
 
+        main {
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        section.country {
+            margin-bottom: 25px;
+        }
+
+        section.country > h1 {
+            color: #4b6cb7;
+            border-bottom: 2px solid #4b6cb7;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        section.vehicle-type {
+            margin-bottom: 15px;
+        }
+
+        section.vehicle-type h2 {
+            color: #ff6f61;
+            margin-bottom: 10px;
+        }
+
+        section.vehicle {
+            background-color: #fff;
+            padding: 12px 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            margin-bottom: 10px;
+        }
+
+        section.vehicle h3 {
+            color: #182848;
+            margin-top: 0;
+        }
+
+        section.vehicle ul {
+            padding-left: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5em 0;
+            background-color: #182848;
+            color: #fff;
+            margin-top: 30px;
+        }
+
+        footer h2 {
+            margin-bottom: 10px;
+            color: #ff6f61;
+        }
+    </style>

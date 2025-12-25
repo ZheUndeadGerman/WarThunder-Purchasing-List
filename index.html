@@ -1,157 +1,175 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>War Thunder Premium Vehicles Guide</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        /* General body styles */
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #eef2f7;
-            color: #333;
-            line-height: 1.6;
-        }
+<main>
+    <!-- USA -->
+    <button class="collapsible">USA</button>
+    <div class="content">
+        <button class="collapsible">Tanks</button>
+        <div class="content"></div>
 
-        /* Header styles */
-        header {
-            background: linear-gradient(90deg, #4b6cb7, #182848);
-            color: #fff;
-            padding: 1.5em 0;
-            text-align: center;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-        }
+        <button class="collapsible">Helicopters</button>
+        <div class="content"></div>
 
-        nav {
-            text-align: center;
-            margin-bottom: 1em;
-        }
+        <button class="collapsible">Air</button>
+        <div class="content">
+            <h3>A-10A Early</h3>
+            <ul>
+                <li>€60</li>
+                <li>Not recommended in ARB but very good in GRB</li>
+                <li>AIM-9L missiles are good for surprise attacks</li>
+                <li>Dogfights are definitely not recommended</li>
+            </ul>
+            <h3>F-5C</h3>
+            <ul>
+                <li>€65</li>
+                <li>Good dogfight aircraft</li>
+                <li>Missiles are only good if the enemy doesn't know where you are</li>
+            </ul>
+            <h3>F-4S Phantom II</h3>
+            <ul>
+                <li>€70</li>
+                <li>Many air-to-air missiles, IR missiles rarely useful</li>
+                <li>Avoid dogfights</li>
+                <li>Two playstyles: high altitude using radar missiles, or low altitude hunting high-flying enemies</li>
+            </ul>
+        </div>
 
-        nav a {
-            text-decoration: none;
-            color: #fff;
-            background-color: #ff6f61;
-            padding: 8px 15px;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
+        <button class="collapsible">Ships</button>
+        <div class="content"></div>
+    </div>
 
-        nav a:hover {
-            background-color: #ff3b2e;
-        }
+    <!-- Germany -->
+    <button class="collapsible">Germany</button>
+    <div class="content">
+        <button class="collapsible">Tanks</button>
+        <div class="content">
+            <h3>Leopard 2 (PzBtl 123)</h3>
+            <ul>
+                <li>€65</li>
+                <li>Standard Leo 2A4 with camouflage net</li>
+            </ul>
+            <h3>Leopard 2A4M</h3>
+            <ul>
+                <li>Standard Leo 2A4 but with better turret armor</li>
+            </ul>
+        </div>
 
-        main {
-            padding: 20px;
-            max-width: 1000px;
-            margin: auto;
-        }
+        <button class="collapsible">Helicopters</button>
+        <div class="content">
+            <h3>Mi-24P HFS 80</h3>
+            <ul>
+                <li>8730 GE ~€57.62</li>
+                <li>Good air-to-ground missiles if you keep your distance</li>
+                <li>Very heavy helicopter (not very maneuverable)</li>
+            </ul>
+        </div>
 
-        section.country {
-            margin-bottom: 25px;
-        }
+        <button class="collapsible">Air</button>
+        <div class="content">
+            <h3>MiG-21 SPS</h3>
+            <ul>
+                <li>(No longer obtainable)</li>
+                <li>Fly high and fire R-60 or R-13M1 missiles from above</li>
+            </ul>
+            <h3>MiG-21bis "Lazur-M"</h3>
+            <ul>
+                <li>€70</li>
+                <li>Use R-60MK missiles and fire in head-ons at the last moment</li>
+            </ul>
+        </div>
 
-        section.country > h1 {
-            color: #4b6cb7;
-            border-bottom: 2px solid #4b6cb7;
-            padding-bottom: 5px;
-            margin-bottom: 15px;
-        }
+        <button class="collapsible">Ships</button>
+        <div class="content"></div>
+    </div>
 
-        section.vehicle-type {
-            margin-bottom: 15px;
-        }
+    <!-- USSR -->
+    <button class="collapsible">USSR</button>
+    <div class="content">
+        <button class="collapsible">Tanks</button>
+        <div class="content">
+            <h3>2S38</h3>
+            <ul>
+                <li>9270 GE ~€61.18</li>
+                <li>No armor (no armor is best armor)</li>
+                <li>Good air defense (bring ~40 HE-VT, rest darts or APCBC)</li>
+            </ul>
+            <h3>T-72AV (TURMS-T)</h3>
+            <ul>
+                <li>€65</li>
+                <li>Bad at flanking</li>
+                <li>Close combat focused</li>
+                <li>Use reactive armor effectively</li>
+            </ul>
+        </div>
 
-        section.vehicle-type h2 {
-            color: #ff6f61;
-            margin-bottom: 10px;
-        }
+        <button class="collapsible">Helicopters</button>
+        <div class="content">
+            <h3>Ka-50 "Black Shark"</h3>
+            <ul>
+                <li>€50</li>
+                <li>Good air-to-ground missiles usable at long and short range</li>
+                <li>Cannons are also good if used with APDS</li>
+                <li>Also good against planes or other helicopters</li>
+            </ul>
+        </div>
 
-        section.vehicle {
-            background-color: #fff;
-            padding: 12px 15px;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            margin-bottom: 10px;
-        }
+        <button class="collapsible">Air</button>
+        <div class="content">
+            <h3>Su-30MK2</h3>
+            <ul>
+                <li>€80</li>
+                <li>Fly at high altitude</li>
+                <li>Destroy enemies using missiles only</li>
+                <li>No dogfighting – BVR or head-ons</li>
+            </ul>
+        </div>
 
-        section.vehicle h3 {
-            color: #182848;
-            margin-top: 0;
-        }
+        <button class="collapsible">Ships</button>
+        <div class="content"></div>
+    </div>
 
-        section.vehicle ul {
-            padding-left: 20px;
-        }
+    <!-- Japan -->
+    <button class="collapsible">Japan</button>
+    <div class="content">
+        <button class="collapsible">Tanks</button>
+        <div class="content">
+            <h3>Type 90(B) "Fuji"</h3>
+            <ul>
+                <li>€70</li>
+                <li>4 second reload but poor armor</li>
+                <li>Very good for flanking</li>
+            </ul>
+        </div>
 
-        footer {
-            text-align: center;
-            padding: 1.5em 0;
-            background-color: #182848;
-            color: #fff;
-            margin-top: 30px;
-        }
+        <button class="collapsible">Air</button>
+        <div class="content">
+            <h3>AV-8S</h3>
+            <ul>
+                <li>€60</li>
+                <li>Bomb with napalm</li>
+                <li>Fly high and get kills with missiles while firing from above</li>
+            </ul>
+        </div>
+    </div>
 
-        footer h2 {
-            margin-bottom: 10px;
-            color: #ff6f61;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Welcome to the War Thunder Premium Vehicles Guide</h1>
-        <nav>
-            <a href="https://docs.google.com/spreadsheets/d/1oNwp_MXszU5J2dcaz5IoCtSAQ-infPdOWhwtJXqtrwU/edit?usp=sharing">Full Vehicle List</a>
-        </nav>
-    </header>
+    <!-- France -->
+    <button class="collapsible">France</button>
+    <div class="content">
+        <button class="collapsible">Tanks</button>
+        <div class="content">
+            <h3>Somua SM</h3>
+            <ul>
+                <li>€45</li>
+                <li>Very good armor with excellent penetration and reload time (highly recommended)</li>
+            </ul>
+        </div>
+    </div>
 
-    <main>
-        <section class="country">
-            <h1>USA</h1>
-            <section class="vehicle-type">
-                <h2>Air</h2>
-                <section class="vehicle">
-                    <h3>A-10A Early</h3>
-                    <ul>
-                        <li>€60</li>
-                        <li>Not recommended in ARB but very good in GRB</li>
-                        <li>AIM-9L missiles are good for surprise attacks</li>
-                        <li>Dogfights are definitely not recommended</li>
-                    </ul>
-                </section>
-                <section class="vehicle">
-                    <h3>F-5C</h3>
-                    <ul>
-                        <li>€65</li>
-                        <li>Good dogfight aircraft</li>
-                        <li>Missiles are only good if the enemy doesn't know where you are</li>
-                    </ul>
-                </section>
-            </section>
-        </section>
+    <!-- Israel -->
+    <button class="collapsible">Israel</button>
+    <div class="content">
+        <button class="collapsible">Tanks</button>
+        <div class="content"></div>
 
-        <section class="country">
-            <h1>Germany</h1>
-            <section class="vehicle-type">
-                <h2>Tanks</h2>
-                <section class="vehicle">
-                    <h3>Leopard 2 (PzBtl 123)</h3>
-                    <ul>
-                        <li>€65</li>
-                        <li>Standard Leo 2A4 with camouflage net</li>
-                    </ul>
-                </section>
-            </section>
-        </section>
-    </main>
-
-    <footer>
-        <h2>Contributors</h2>
-        <p>25.12.2025 ZheUndeadGerman#1</p>
-        <p>23.12.2025 Solo_spatz</p>
-    </footer>
-</body>
-</html>
+        <button class="collapsible">Air</button>
+        <div class="content"></div>
+    </div>
+</main>
